@@ -144,7 +144,7 @@ class DatabaseEngine(object):
 
         return len(self.__rows)
 
-    def import_attachment(self, name: str, path: str, ignore_file_exists=False) -> str:
+    def import_attachment(self, name: str, path: str, ignore_file_exists: bool = False) -> str:
         """
         Import a file from drive to database attachments
         :exception error.AttachmentStatusError
@@ -171,7 +171,7 @@ class DatabaseEngine(object):
         return output_path
 
     def export_attachment(
-            self, name: str, file_name: str, output_dir: str = None, ignore_file_exists=False
+            self, name: str, file_name: str, output_dir: str = None, ignore_file_exists: bool = False
     ) -> str:
         """
         Export a file from database attachments to drive ( by default = temp )

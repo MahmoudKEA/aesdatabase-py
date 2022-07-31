@@ -12,15 +12,10 @@
 ```python
 import aesdatabase
 
-# Enable attachments feature
-attachmentsStatus = True
-
-# Enable backup feature
-backupStatus = True
-
 # Build the driver
 drive = aesdatabase.DriveSetup(
-    add_attachment=attachmentsStatus, add_backup=backupStatus
+    add_attachment=True,        # Enable attachments feature
+    add_backup=True             # Enable backup feature
 )
 
 # Create directories
