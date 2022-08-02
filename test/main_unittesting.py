@@ -1,4 +1,4 @@
-import aesdatabase.aescrypto.utility
+import aescrypto.utility
 from aesdatabase import *
 import unittest
 
@@ -275,17 +275,17 @@ class MyTestCase(unittest.TestCase):
 
         # Task
         if db.isEncrypted:
-            path = aesdatabase.aescrypto.utility.add_extension(drive.databasePath)
+            path = aescrypto.utility.add_extension(drive.databasePath)
         else:
             path = drive.databasePath
 
         try:
-            checksum_before = aesdatabase.aescrypto.utility.checksum(path)
+            checksum_before = aescrypto.utility.checksum(path)
         except FileNotFoundError:
             checksum_before = None
 
         db.dump()
-        checksum_after = aesdatabase.aescrypto.utility.checksum(path)
+        checksum_after = aescrypto.utility.checksum(path)
 
         # Debugging
         if debugging:

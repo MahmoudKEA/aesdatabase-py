@@ -1,4 +1,4 @@
-from . import header, error, aescrypto
+from . import header, error
 from .drive import DriveSetup
 from .main import DatabaseEngine
 import os
@@ -7,3 +7,4 @@ import shutil
 import typing
 import struct
 import pickle
+import aescrypto

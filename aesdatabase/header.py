@@ -1,10 +1,10 @@
-from . import aescrypto
 import os
 import time
 import shutil
 import typing
 import struct
 import pickle
+import aescrypto
 
 
 chunkSize = 1024 * 1024
