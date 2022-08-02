@@ -6,6 +6,7 @@
 
 ## Requirements for Python 3
     pip install pycryptodome
+    aescrypto: https://github.com/MahmoudKhalid/aescrypto
 
 ## Usage
 ### Build a driver that defines all paths and directories
